@@ -5,7 +5,8 @@ console.log('Hello World');
 let age: number = 30; // Specify type as number
 
 // let can be re-assigned, const can not
-age = 32;
+ age = 32;
+ //age='donia'
 
 // DATA TYPES - String, Number, Boolean, null, undefined
 const userName: string = 'Brad'; // Renamed to avoid conflict fom name to userName
@@ -29,8 +30,10 @@ let val: any; // Using 'any' for dynamic type; could be more specific based on u
 
 // Get length
 val = s.length;
+console.log(val)
 // Change case
 val = s.toUpperCase();
+console.log(val)
 val = s.toLowerCase();
 // Get sub string
 val = s.substring(0, 5);
@@ -67,7 +70,6 @@ interface Person {
   address: Address;
   email?: string; // Optional property
 }
-
 const person: Person = {
   firstName: 'John',
   age: 30,
@@ -225,3 +227,20 @@ var oo= {
 //access the object values 
 console.log(oo.firstName) 
 console.log(oo.lastName)
+
+
+// let age :number= 25;
+// function updateAge(): void {
+//    age = 25 + 5; // fixed to avoid redeclaration of `age` in the same scope
+// }
+// updateAge();
+// const output: string = false || [] ? "Invalid" : "Correct";
+// console.log("The Input Type is", output);
+// function isPrime(num: number): boolean {
+//   if (num <= 1) return false;
+//   for (let i = 2; i < num; i++) {
+//     if (num % i === 0) return false;
+//   }
+//   return true;
+//}
+//console.log(isPrime(7)); // Expected output: true
